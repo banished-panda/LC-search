@@ -216,7 +216,7 @@ input.addEventListener("input", function () {
             for (var i = 0; i < tds.length; i++) {
                 var td = tds[i];
 
-                var doc_id = doc_ids[i];
+                var doc_id = doc_ids[i] - 1;
                 var dict = qinfo.getRow(doc_id).toDict();
                 var dvs = td.getElementsByTagName('div');
                 var url = 'https://leetcode.com/problems/'+dict['titleSlug']+'/description/';
