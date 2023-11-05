@@ -673,6 +673,8 @@ button:-moz-focusring,
 
 .result table tr td div.difficulty {
     font-size: 0.8em;
+    color: #d5f03e;
+    padding-left: 4px;
 }
 
 .result table tr td div.question {
