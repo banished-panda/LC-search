@@ -10,14 +10,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (alpha) for the desired dimness */
-    z-index: 1; /* Ensure the overlay is on top of the background */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the last value (alpha) for the desired dimness */
+    z-index: 1;
+    /* Ensure the overlay is on top of the background */
 }
 
 .content {
     position: relative;
-    z-index: 2; /* Ensure the content is on top of the overlay */
-    color: #ddf556; /* Set the font color to white or any light color */
+    z-index: 2;
+    /* Ensure the content is on top of the overlay */
+    color: #f8ffcf;
+    /* Set the font color to white or any light color */
 }
 
 fieldset {
@@ -54,7 +58,8 @@ legend {
     margin-bottom: 0
 }
 
-.choices.is-disabled .choices__inner,.choices.is-disabled .choices__input {
+.choices.is-disabled .choices__inner,
+.choices.is-disabled .choices__input {
     background-color: #eaeaea;
     cursor: not-allowed;
     -webkit-user-select: none;
@@ -100,7 +105,8 @@ legend {
     opacity: .5
 }
 
-.choices[data-type*=select-one] .choices__button:hover,.choices[data-type*=select-one] .choices__button:focus {
+.choices[data-type*=select-one] .choices__button:hover,
+.choices[data-type*=select-one] .choices__button:focus {
     opacity: 1
 }
 
@@ -139,11 +145,13 @@ legend {
     margin-right: 0
 }
 
-.choices[data-type*=select-multiple] .choices__inner,.choices[data-type*=text] .choices__inner {
+.choices[data-type*=select-multiple] .choices__inner,
+.choices[data-type*=text] .choices__inner {
     cursor: text
 }
 
-.choices[data-type*=select-multiple] .choices__button,.choices[data-type*=text] .choices__button {
+.choices[data-type*=select-multiple] .choices__button,
+.choices[data-type*=text] .choices__button {
     position: relative;
     display: inline-block;
     margin-top: 0;
@@ -159,7 +167,10 @@ legend {
     opacity: .75
 }
 
-.choices[data-type*=select-multiple] .choices__button:hover,.choices[data-type*=select-multiple] .choices__button:focus,.choices[data-type*=text] .choices__button:hover,.choices[data-type*=text] .choices__button:focus {
+.choices[data-type*=select-multiple] .choices__button:hover,
+.choices[data-type*=select-multiple] .choices__button:focus,
+.choices[data-type*=text] .choices__button:hover,
+.choices[data-type*=text] .choices__button:focus {
     opacity: 1
 }
 
@@ -176,7 +187,8 @@ legend {
     overflow: hidden
 }
 
-.is-focused .choices__inner,.is-open .choices__inner {
+.is-focused .choices__inner,
+.is-open .choices__inner {
     border-color: #b7b7b7
 }
 
@@ -298,7 +310,7 @@ legend {
 
 @media(min-width: 640px) {
     .choices__list--dropdown .choices__item--selectable {
-        padding-right:100px
+        padding-right: 100px
     }
 
     .choices__list--dropdown .choices__item--selectable:after {
@@ -409,7 +421,7 @@ legend {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: poppins,sans-serif;
+    font-family: poppins, sans-serif;
     background-size: cover;
     background-position: center center;
     padding: 15px
@@ -478,7 +490,7 @@ legend {
     background-size: 14px auto;
     padding-left: 0;
     opacity: .3;
-    transition: all .2s ease-out,color .2s ease-out
+    transition: all .2s ease-out, color .2s ease-out
 }
 
 .querry form .inner-form .input-field .choices .choices__inner .choices__list .choices__item .choices__button:hover {
@@ -533,15 +545,17 @@ legend {
     fill: #333;
     width: 40px;
     height: 40px;
-    transition: all .2s ease-out,color .2s ease-out
+    transition: all .2s ease-out, color .2s ease-out
 }
 
-.querry form .inner-form .input-field .btn-search:hover,.querry form .inner-form .input-field .btn-search:focus {
+.querry form .inner-form .input-field .btn-search:hover,
+.querry form .inner-form .input-field .btn-search:focus {
     outline: 0;
     box-shadow: none
 }
 
-.querry form .inner-form .input-field .btn-search:hover svg,.querry form .inner-form .input-field .btn-search:focus svg {
+.querry form .inner-form .input-field .btn-search:hover svg,
+.querry form .inner-form .input-field .btn-search:focus svg {
     fill: #000
 }
 
@@ -551,7 +565,7 @@ legend {
 
 .querry form .suggestion-wrap span {
     font-size: 14px;
-    font-family: helvetica,sans-serif;
+    font-family: helvetica, sans-serif;
     display: inline-block;
     padding: 0 15px;
     line-height: 32px;
@@ -561,31 +575,106 @@ legend {
     margin-bottom: 10px
 }
 
-button,input,optgroup,select,textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: sans-serif;
     font-size: 100%;
     line-height: 1.15;
     margin: 0
 }
 
-button,input {
+button,
+input {
     overflow: visible
 }
 
-button,select {
+button,
+select {
     text-transform: none
 }
 
-button,html [type=button],[type=reset],[type=submit] {
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
     -webkit-appearance: button;
     appearance: inherit;
 }
 
-button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
     border-style: none;
     padding: 0
 }
 
-button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
     outline: 1px dotted ButtonText
+}
+
+/* search results */
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table-responsive{
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result table {
+    margin-left: 0.0cm;
+    width: 90%;
+    height: 100%;
+}
+
+.result table tr {
+    display: flex;
+    height: 9vh;
+    padding: 5px;
+}
+
+.result table tr td {
+    flex: 1;
+    padding: 5px;
+    padding-right: 20px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 95%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.result table tr td:hover {
+    background-color: rgba(227, 179, 20, 0.3);
+}
+
+.result table tr td div {
+    display: inline-block;
+}
+
+.result table tr td img {
+    width: 40px;
+    height: 40px;
+}
+
+.result table tr td div.difficulty {
+    font-size: 0.8em;
+}
+
+.result table tr td div.question {
+    padding-left: 5%;
 }
